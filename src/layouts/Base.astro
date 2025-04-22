@@ -18,6 +18,20 @@ const { seo } = Astro.props;
   <body>
     <slot name="header" />
     <main>
+    <body>
+  <slot name="header" />
+
+  <nav style="margin-bottom: 2rem;">
+    <a href="/" style="margin-right: 1rem;">Home</a>
+    <a href="/services" style="margin-right: 1rem;">Services</a>
+    <a href="/about" style="margin-right: 1rem;">About</a>
+    <a href="/portfolio">Portfolio</a>
+  </nav>
+
+  <slot />
+  <slot name="footer" />
+</body>
+
       <slot />
     </main>
     <slot name="footer" />
