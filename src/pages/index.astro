@@ -1,39 +1,30 @@
 ---
 import Layout from "../layouts/Base.astro";
-import Container from "../components/Container.astro";
-
-const seo = {
-  title: "Astro Minimal Starter",
-  description: "This is a starter repo for an blog built with Astro including open graph tags, canonical urls, RSS, sitemap support."
-  }
+---
+import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout
-  seo={seo}
->
-  <Container>
-    <h1>Brady Michalik • CRM Automation & Business Growth</h1>
-    <p>
-      I help small businesses turn their CRM into a revenue machine.
-    </p>
+<Layout>
+  <h1>Brady Michalik — CRM Automation Consultant</h1>
+  <p>I help small businesses turn their CRM into a revenue-generating machine.</p>
 
-    <p>
-      Don't be fooled by the simplicity of this starter either. With excellent
-      SEO built in, Astro's excellent developer environment, and performance
-      best practices you're getting one of the best foundations for a personal
-      blog with posts written in markdown. The reason for making such a bare
-      bones starter in terms of styles is that it has what you need out of the
-      box for SEO and site structure but it makes no assumptions about how you
-      want it look and behave.
-    </p>
+  <section>
+    <h2>Services</h2>
+    <ul>
+      <li><strong>CRM Workflow Audit</strong> — Find bottlenecks, dropped leads, and inefficiencies</li>
+      <li><strong>Automation Setup</strong> — Turn manual tasks into automatic wins</li>
+      <li><strong>Integrations</strong> — Connect your CRM to the tools you already use</li>
+      <li><strong>Ongoing Support</strong> — Monthly improvements and updates</li>
+    </ul>
+  </section>
 
-    <p>
-      Sometimes starters can feel like they are giving us way too much and
-      you'll spend a day picking apart half of the code to get to the setup you
-      actually wanted. Want to use vanilla CSS instead of Tailwind or Scss? No
-      problem!
-    </p>
+  <section>
+    <h2>About</h2>
+    <p>Based in St. Pete, I’ve helped retail and service businesses streamline their processes, save time, and make more money using smart automation — with tools they already use.</p>
+  </section>
 
-    <a href="/blog">Blog →</a>
-  </Container>
+  <section>
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:brady@example.com">brady@example.com</a> or schedule a call.</p>
+  </section>
 </Layout>
