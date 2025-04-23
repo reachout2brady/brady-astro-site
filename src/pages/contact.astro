@@ -1,0 +1,37 @@
+---
+import Page from '../layouts/Page.astro';
+---
+
+<Page>
+  <h1>Contact Me</h1>
+  <p>Have a project in mind? Want a CRM audit? Let’s connect.</p>
+
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+    
+    <label>
+      Your Name<br />
+      <input type="text" name="name" required />
+    </label><br /><br />
+    
+    <label>
+      Your Email<br />
+      <input type="email" name="email" required />
+    </label><br /><br />
+    
+    <label>
+      Message<br />
+      <textarea name="message" rows="5" required></textarea>
+    </label><br /><br />
+    
+    <button type="submit">Send</button>
+  </form>
+
+  <br />
+  <a href="https://calendly.com/yourusername" target="_blank">
+    <button>📅 Schedule an Appointment</button>
+  </a>
+
+  <br /><br />
+  <a href="/">← Back to Home</a>
+</Page>
