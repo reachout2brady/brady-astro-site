@@ -15,7 +15,6 @@ const { seo } = Astro.props;
     <slot name="head-bottom" />
   </head>
   <body>
-    <body>
     <slot name="header" />
 
     <nav style="margin: 2rem 0;">
@@ -30,10 +29,6 @@ const { seo } = Astro.props;
       <slot />
     </main>
 
-    <slot name="header" />
-    <main>
-      <slot />
-    </main>
     <slot name="footer" />
   </body>
 </html>
