@@ -18,13 +18,16 @@ const { seo } = Astro.props;
   <body class="font-sans">
     <slot name="header" />
 
-    <nav class="my-8 text-center space-x-4">
-      <a href="/" class="text-blue-600 hover:underline">Home</a>
-      <a href="/services" class="text-blue-600 hover:underline">Services</a>
-      <a href="/about" class="text-blue-600 hover:underline">About</a>
-      <a href="/portfolio" class="text-blue-600 hover:underline">Portfolio</a>
-      <a href="/contact" class="text-blue-600 hover:underline">Contact</a>
-    </nav>
+    <nav class="bg-white shadow-md py-4">
+  <div class="max-w-5xl mx-auto px-4 flex justify-center space-x-8 text-sm font-semibold text-gray-700">
+    <a href="/" class="hover:text-blue-600">Home</a>
+    <a href="/services" class="hover:text-blue-600">Services</a>
+    <a href="/about" class="hover:text-blue-600">About</a>
+    <a href="/portfolio" class="hover:text-blue-600">Portfolio</a>
+    <a href="/contact" class="hover:text-blue-600">Contact</a>
+  </div>
+</nav>
+
 
     <main class="max-w-4xl mx-auto px-4">
       <slot />
