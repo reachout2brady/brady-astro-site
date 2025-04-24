@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 import BaseHead from "../components/BaseHead.astro";
 import type { Props as BaseHeadProps } from '../components/BaseHead.astro';
 
@@ -11,22 +12,21 @@ const { seo } = Astro.props;
 
 <html lang="en">
   <head>
-<link rel="stylesheet" href="/src/styles/global.css" type="text/css" />
     <BaseHead {...seo} />
     <slot name="head-bottom" />
   </head>
-  <body>
+  <body class="font-sans">
     <slot name="header" />
 
-    <nav style="margin: 2rem 0;">
-      <a href="/" style="margin-right: 1rem;">Home</a>
-      <a href="/services" style="margin-right: 1rem;">Services</a>
-      <a href="/about" style="margin-right: 1rem;">About</a>
-      <a href="/portfolio" style="margin-right: 1rem;">Portfolio</a>
-      <a href="/contact">Contact</a>
+    <nav class="my-8 text-center space-x-4">
+      <a href="/" class="text-blue-600 hover:underline">Home</a>
+      <a href="/services" class="text-blue-600 hover:underline">Services</a>
+      <a href="/about" class="text-blue-600 hover:underline">About</a>
+      <a href="/portfolio" class="text-blue-600 hover:underline">Portfolio</a>
+      <a href="/contact" class="text-blue-600 hover:underline">Contact</a>
     </nav>
 
-    <main>
+    <main class="max-w-4xl mx-auto px-4">
       <slot />
     </main>
 
