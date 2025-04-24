@@ -2,22 +2,16 @@
 // src/layouts/Layout.astro
 import NavBar from '../components/NavBar.astro';
 ---
----
-const { children } = Astro.props;
----
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Brady Michalik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
   <body class="bg-gray-50 text-gray-800">
-  <NavBar />
-  <main class="px-4 py-8">
-    <slot />
-  </main>
-</body>
-
-    <slot />
+    <NavBar />
+    <main class="px-4 py-8">
+      <slot />
+    </main>
   </body>
 </html>
