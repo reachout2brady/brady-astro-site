@@ -1,34 +1,44 @@
 ---
-import Page from '../layouts/Page.astro';
+import Layout from "@/layouts/Layout.astro";
 ---
 
-<Page>
-  <h1>Portfolio</h1>
+<Layout>
+  <section class="max-w-4xl mx-auto px-4 py-16 space-y-12">
+    <h1 class="text-4xl font-bold text-gray-900">Portfolio</h1>
+    <p class="text-lg text-gray-700">
+      This is a growing collection of tools, automations, and systems I’ve built to help businesses operate more efficiently and connect with their customers more effectively.
+    </p>
 
-  <p>This is a growing collection of tools, automations, and systems I’ve built to help businesses operate more efficiently and connect with their customers more effectively.</p>
+    <div class="space-y-4">
+      <h2 class="text-2xl font-semibold">📟 Brady’s Virtual Showroom</h2>
+      <p class="text-gray-700">
+        A full interactive showroom for Kane’s Furniture built using Softr, Dropbox AR model hosting, and CRM-integrated contact tracking. Customers can preview furniture in their space, explore collections, and submit interest — all from one streamlined hub.
+      </p>
+      <a href="https://bradyatkanes.softr.app" target="_blank"
+        class="inline-block mt-2 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition shadow">
+        Visit the Virtual Showroom →
+      </a>
+    </div>
 
-  <section>
-    <h2>🛋️ Brady’s Virtual Showroom</h2>
-    <p>A full interactive showroom for Kane’s Furniture built using Softr, Dropbox AR model hosting, and CRM-integrated contact tracking. Customers can preview furniture in their space, explore collections, and submit interest — all from one streamlined hub.</p>
-    <p><a href="https://bradyatkanes.softr.app" target="_blank">Visit the Virtual Showroom →</a></p>
+    <div class="space-y-4">
+      <h2 class="text-2xl font-semibold">🧠 Online Prospecting Workflow</h2>
+      <p class="text-gray-700">
+        Custom Python Selenium script that automates my online prospecting within the Perq CRM platform. The script identifies new leads, applies a conquest tag, removes them from active filters, and initiates outbound messaging — streamlining repetitive CRM tasks and improving lead conversion speed.
+      </p>
+      <p class="text-gray-700">
+        This system effectively eliminates manual steps in my day-to-day sales process, allowing me to spend more time closing and less time clicking.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <h2 class="text-2xl font-semibold">🔗 Zapier Lead Integration</h2>
+      <p class="text-gray-700">
+        Created a Zapier flow to auto-capture leads from web forms, filter by service type, and route them into segmented Google Sheets with automated email notifications.
+      </p>
+    </div>
+
+    <div class="pt-6">
+      <a href="/" class="text-blue-600 hover:underline">← Back to Home</a>
+    </div>
   </section>
-
-    <section>
-    <h2>🏷️ Online Prospecting Workflow</h2>
-    <p>Custom Python Selenium script that automates my online prospecting within the Perq CRM platform. The script identifies new leads, applies a conquest tag, removes them from active filters, and initiates outbound messaging — streamlining repetitive CRM tasks and improving lead conversion speed.</p>
-    <p>This system effectively eliminates manual steps in my day-to-day sales process, allowing me to spend more time closing and less time clicking.</p>
-  </section>
-
-
-  <section>
-    <h2>🔗 Zapier Lead Integration</h2>
-    <p>Created a Zapier flow to auto-capture leads from web forms, filter by service type, and route them into segmented Google Sheets with automated email notifications.</p>
-  </section>
-
-  <section>
-    <h2>🚀 DispatchTrack Order Scraper (In Progress)</h2>
-    <p>Building a custom script to extract customer order data from DispatchTrack and populate Google Sheets for live delivery tracking through a client portal.</p>
-  </section>
-
-  <a href="/">← Back to Home</a>
-</Page>
+</Layout>
