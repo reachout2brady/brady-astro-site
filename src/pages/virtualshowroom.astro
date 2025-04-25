@@ -1,0 +1,22 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold text-center mb-6">Virtual Showroom</h1>
+    <p class="text-center text-gray-600 mb-8">
+      Explore Kane’s Furniture collections interactively using AR, product videos, and custom layouts.
+    </p>
+
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe
+        src="https://bradyatkanes.softr.app"
+        title="Brady’s Virtual Showroom"
+        class="w-full h-[80vh] border rounded-lg shadow-lg"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+</Layout>
